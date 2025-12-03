@@ -9,9 +9,6 @@ ans = 0
 def get_max_jolt(line, pick):
     if pick == 0:
         return ""
-    
-    if len(line) == 0:
-        return ""
 
     n = len(line)
     if n == pick:
@@ -21,9 +18,6 @@ def get_max_jolt(line, pick):
     c2 = get_max_jolt(line[1:], pick)
 
     return max(c1, c2)
-
-# print(get_max_jolt("54321", 2))
-# exit()
 
 for line in lines:
     # print(line)
